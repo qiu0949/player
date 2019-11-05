@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>播放器</title>
+    <link rel="stylesheet" href="player.css" type="text/css">
+</head>
+<body>
+    <audio src="audio/1.mp3" id="id-audio" data-active="0" data-mode="next"></audio>
+    <div id="player">
+        <div class="album">
+            <div class="heart"></div>
+        </div>
+        <div class="info">
+            <div class="progress-bar">
+                <div class="time--current">0:00</div>
+                <div class="time--total">0:00</div>
+                <div class="fill"></div>
+            </div>
+            <div class="currently-playing">
+                <h2 class="song-name">Blood Rage</h2>
+                <h3 class="artist-name">David Vives</h3>
+            </div>
+            <div class="controls">
+                <div class="option"></div>
+                <div class="volume">
+                    <img class="img-mute hide" src="imgs/player/mute.png"/>
+                    <img class="img-speak" src="imgs/player/speaker.png"/>
+                </div>
+                <div class="previous"><img class="img-back" data-active="-1" src="imgs/player/back.png"/></div>
+                <div class="play"><img class="img-play" src="imgs/player/play.png"/></div>
+                <div class="pause"><img class="img-pause hide" src="imgs/player/pause.png"/></div>
+                <div class="next"><img class="img-next" data-active="1" src="imgs/player/next.png"/></div>
+                <div class="shuffle"><img class="img-shuffle" src="imgs/player/shuffle.png"/></div>
+                <div class="add"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>made by <a href="https://codepen.io/juliepark"> unknown</a>
+    </footer>
+    <script src="player.js"></script>
+</body>
+</html>
